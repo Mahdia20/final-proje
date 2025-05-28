@@ -1,0 +1,194 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans&display=swap');
+
+:root {
+  --light-blue: #98acc3;
+  --deep-blue: #234b75;
+  --accent-brown: #082a4c;
+  --soft-gray-blue: #D5D5D6;
+  --text-light: #ffffff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--deep-blue);
+  color: var(--light-blue);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+  list-style: none;
+}
+
+nav a {
+  color: var(--text-light);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--light-blue);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: var(--accent-brown);
+  color: var(--text-light);
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Sections */
+main section {
+  background-color: var(--soft-gray-blue);
+  color: var(--deep-blue);
+  border-left: 5px solid var(--accent-brown);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section h2 {
+  color: var(--accent-brown);
+  margin-bottom: 10px;
+  font-size: 1.6rem;
+}
+
+section h2::before {
+  content: url('https://www.svgrepo.com/show/499754/star.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+/* Links */
+a {
+  color: var(--accent-brown);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--deep-blue);
+  text-decoration: underline;
+}
+
+/* Forms */
+form input,
+form textarea,
+form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid var(--deep-blue);
+  border-radius: 5px;
+}
+
+/* Social Links */
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  color: var(--accent-brown);
+  font-size: 1.5rem;
+  margin: 0 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--accent-brown);
+  transform: scale(1.2);
+}
+
+/* Email Contact */
+.email-contact {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.email-contact a {
+  font-weight: 400;
+  font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--soft-gray-blue);
+  border-top: 1px solid var(--accent-brown);
+}
+
+/* Portfolio Paragraphs */
+#portfolio p {
+  font-style: italic;
+  color: var(--deep-blue);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  main section {
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
